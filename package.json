@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
@@ -39,5 +38,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.134",
+    "@mui/material": "^5.13.6",
+    "@mui/styles": "^5.13.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/styled-components": "^5.1.26",
+    "axios": "^1.4.0",
+    "socket.io-client": "^4.7.1",
+    "styled-components": "^6.0.1"
   }
 }

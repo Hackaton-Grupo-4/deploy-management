@@ -1,16 +1,18 @@
 import { CardLayout, CardTop, CardBottom, CardBottomTags, CardBottomBtn, CardContent, CardAuthor, CardSynthesis, CardTopBoxBtn  } from './styled'
-import { Button } from '../../components'
+import { Button, Tag } from '../../components'
 import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai"
+import { ICard } from '../../interfaces'
+import { CardLabels } from '../../const'
 
-export const Card = () =>
+export const Card = ({ author, synthesis, tags }: ICard) =>
   <CardLayout>
     <CardTop>
       <CardContent>
         <CardAuthor>
-          <strong>Autor:</strong> João Soares
+          <strong>{CardLabels.author}</strong> {author}
         </CardAuthor>
         <CardSynthesis>
-        "O texto descritivo é um tipo textual marcado pela descrição de um lugar ou paisagem, animal, pessoa, acontecimento, entre outros, tendo como objetivo trazer uma imagem ou cena ao seu leitor. Geralmente é utilizado junto ao texto narrativo, pois as sequências formadas pela narração são intercala..."
+          {synthesis}
         </CardSynthesis>
       </CardContent>
       <CardTopBoxBtn>
@@ -20,19 +22,17 @@ export const Card = () =>
         <Button icon outline color='DANGER' onClick={() => {}}>
           <AiOutlineDelete/>
         </Button>
-      </CardTopBoxBtn>
-      
+      </CardTopBoxBtn>      
     </CardTop>
     <CardBottom>
       <CardBottomTags>
-        <div>Aplicação</div>
-        <div>Time</div>
-        <div>Plataforma</div>
-        <div>Status</div>
+        {
+          tags.map((tag, key) => <Tag key={`tag${key}`}>{tag}</Tag>)
+        }
       </CardBottomTags>
       <CardBottomBtn>
         <Button onClick={() => {}}>
-          Ver mais
+          {CardLabels.more}
         </Button>
       </CardBottomBtn>
     </CardBottom>

@@ -24,6 +24,9 @@ export const theme: DefaultTheme = {
     blue2: '#378FF7',
 
     green: '#4CAF50',
+
+    purple: '#1D192B',
+    purple1: '#E8DEF8'
   },
   spaceSize: {
       tiny: 4,

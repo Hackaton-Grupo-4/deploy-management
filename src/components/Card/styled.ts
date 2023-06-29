@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const CardLayout = styled.div`
   width: 100%;
   max-width: calc(100% - ${({ theme }) => theme.spaceSize.large}px);
-  height: 162px;
-  max-height: 162px;
+  min-height: 136px;
+  max-height: 136px;
   background-color: ${({ theme }) => theme.colors.white};
   border: 1px solid ${({ theme }) => theme.colors.borderMain};
   border-radius: 6px;
@@ -14,7 +14,7 @@ export const CardLayout = styled.div`
 export const CardTop = styled.div`
   display: flex;
   width: 100%;
-  height: calc(100% - 32px);
+  min-height: calc(136px - 32px);
 `
 
 export const CardBottom = styled.div`
@@ -26,6 +26,7 @@ export const CardBottom = styled.div`
 export const CardBottomTags = styled.div`
   display: flex;
   width: calc(100% - 110px);
+  column-gap: ${({ theme }) => theme.spaceSize.xsmall}px;
 `
 
 export const CardBottomBtn = styled.div`
@@ -48,8 +49,9 @@ export const CardSynthesis = styled.div`
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: ${({ theme }) => theme.font.size.small}px;
 
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 `
 

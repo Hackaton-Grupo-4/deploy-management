@@ -10,22 +10,9 @@ export const HistoricLayout = styled.div`
 
 export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
   display: none;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 80px;
-  height: 32px;
-  border: 1px solid ${({ theme }) => theme.colors.blue2};
-  border-radius: 4px;
-  color: ${({ theme }) => theme.colors.blue2};
   position: absolute;
   top: 2px;
   right: 2px;
-  cursor: pointer;
-  
-  &:hover {
-    color: ${({ theme }) => theme.colors.backgroundMain};
-    background-color: ${({ theme }) => theme.colors.blue2};
-  }
 
   @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
     display: ${({ showBtnFilter }) => showBtnFilter ? 'flex' : 'none'};

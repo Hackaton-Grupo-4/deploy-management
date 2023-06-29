@@ -2,17 +2,15 @@ import { HistoricFilterBoxBtn } from '../styled'
 import { IUseHistoricResponse } from 'interfaces'
 import { Button } from 'components'
 import { pageButtonsLabel } from 'const'
+import { AiOutlineArrowUp } from "react-icons/ai"
 
 
 export const BoxButton = ({ openFilterResponsive, setOpenFilterResponsive }: IUseHistoricResponse) => 
   <HistoricFilterBoxBtn responsive={openFilterResponsive}>
     {
       openFilterResponsive && 
-        <Button outline onClick={() => setOpenFilterResponsive(false)}>
-          {pageButtonsLabel.cancel}
+        <Button onClick={() => setOpenFilterResponsive(false)} icon>
+          <AiOutlineArrowUp />
         </Button>
     }
-    <Button onClick={() => {}}>
-      {pageButtonsLabel.apply}
-    </Button>
   </HistoricFilterBoxBtn>

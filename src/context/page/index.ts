@@ -1,5 +1,5 @@
 import { useContext, createContext } from 'react'
-import { IPageContext } from 'interfaces'
+import { IPageContext } from '../../interfaces'
 
 const PageContext = createContext<IPageContext>({} as IPageContext)
 

@@ -1,6 +1,7 @@
-import { useHistoric } from 'hooks'
-import { HistoricLayout, HistoricContent, HistoricHeader, HistoricList } from './styled'
+import { useHistoric } from '../../../hooks'
+import { HistoricLayout, HistoricContent, HistoricHeader } from './styled'
 import { Filter } from './Filter'
+import { List } from './List'
 
 export const PageHistoric = () => {
   const props = useHistoric()
@@ -11,9 +12,7 @@ export const PageHistoric = () => {
         Estatíticas
       </HistoricHeader>
       <HistoricContent>
-        <HistoricList>
-          Listas
-        </HistoricList>
+        <List />
         <Filter {...props} />
       </HistoricContent>
     </HistoricLayout>

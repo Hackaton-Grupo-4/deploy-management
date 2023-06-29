@@ -1,6 +1,6 @@
 import { PagesLayout, PagesContent, PagesMenu } from './styled'
-import { PageContext } from 'context'
-import { usePages } from 'hooks'
+import { PageContext } from '../context'
+import { usePages } from '../hooks'
 import { PageHistoric, PageReport, PageTextEditor, Menu } from './Contents'
 
 export const Pages = () => {

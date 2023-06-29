@@ -1,1 +1,1 @@
-export const aguardeContext = {}
+export * from './page'

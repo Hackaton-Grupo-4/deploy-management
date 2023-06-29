@@ -17,6 +17,7 @@ export const MenuIcon = styled.img`
 export const MenuContent = styled.div`
   display: flex;
   column-gap: ${({ theme }) => theme.spaceSize.large}px;
+  font-size: ${({ theme }) => theme.font.size.large}px;
 `
 
 export const MenuOption = styled.div<{ active: boolean }>`

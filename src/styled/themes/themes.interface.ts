@@ -5,6 +5,7 @@ interface colors {
   borderMain: string
   backgroundMenu: string
   shadowMain: string
+  hoverMain: string
   black: string
   black1: string
   white: string
@@ -99,6 +100,7 @@ export type nameColors =
     | 'borderMain'
     | 'backgroundMenu'
     | 'shadowMain'
+    | 'hoverMain'
     | 'black'
     | 'black1'
     | 'white'

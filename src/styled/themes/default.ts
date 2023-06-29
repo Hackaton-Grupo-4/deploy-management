@@ -6,6 +6,7 @@ export const theme: DefaultTheme = {
     borderMain: '#DFE3E8',
     backgroundMenu: '#122D52',
     shadowMain: '#122D5229',
+    hoverMain: '#257CE5',
 
     black: '#000000',
     black1: '#2D3139',

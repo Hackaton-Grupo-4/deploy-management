@@ -1,5 +1,6 @@
 import { useHistoric } from 'hooks'
 import { HistoricLayout, HistoricFilter, HistoricContent, HistoricBtnFilterResponse } from './styled'
+import { Button } from 'components'
 import { LiaFilterSolid } from "react-icons/lia"
 
 export const PageHistoric = () => {
@@ -12,6 +13,9 @@ export const PageHistoric = () => {
       </HistoricBtnFilterResponse>
       <HistoricFilter openResponsive={openFilterResponsive} onClick={() => setOpenFilterResponsive(false)}>
         Filtros
+        <Button outline color='SUCCESS'>
+        <LiaFilterSolid /> Filtro
+        </Button>
       </HistoricFilter>
       <HistoricContent>
         Histórico

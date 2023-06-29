@@ -11,6 +11,9 @@ export const theme: DefaultTheme = {
     black1: '#2D3139',
 
     white: '#FFFFFF',
+    
+    grey1: '#447ECC29',
+    grey2: '#6B7786',
 
     red: '#FF2424',
 
@@ -84,11 +87,11 @@ export const theme: DefaultTheme = {
         width: 6px;
     }
     ::-webkit-scrollbar-track {
-        background-color: ${({ theme }) => theme.colors.blue};
+        background-color: ${({ theme }) => theme.colors.grey1};
         border-radius: 12px;
     }
     ::-webkit-scrollbar-thumb {
-        background-color: ${({ theme }) => theme.colors.blue + theme.opacy.percent50};
+        background-color: ${({ theme }) => theme.colors.grey2};
         border-radius: 12px;
     }
   `,

@@ -1,4 +1,11 @@
+import { PagesLayout, PagesContent, PagesMenu } from './styled'
+import { PageHistoric, PageReport, PageTextEditor } from './Contents'
+
 export const Pages = () => 
-  <div>
-    HAHA
-  </div>
+  <PagesLayout>
+    <PagesMenu></PagesMenu>
+    <PagesContent>
+      <div>dasdasdas</div>
+      <div>dasdasdas</div>
+    </PagesContent>
+  </PagesLayout>

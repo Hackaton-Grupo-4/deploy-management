@@ -11,6 +11,8 @@ interface colors {
   red: string
   blue: string
   green: string
+  grey1: string
+  grey2: string
 }
 
 interface fontWeight {
@@ -100,6 +102,8 @@ export type nameColors =
     | 'red'
     | 'blue'
     | 'green'
+    | 'grey1'
+    | 'grey2'
 
 export type nameOpacy =
     'percent0'

@@ -30,7 +30,7 @@ export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
 
   @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
     display: ${({ showBtnFilter }) => showBtnFilter ? 'flex' : 'none'};
-  } 
+  }
 `
 
 export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
@@ -61,6 +61,17 @@ export const HistoricFilterBoxBtn = styled.div<{ responsive: boolean }>`
   div {
     width: ${({ responsive }) => responsive ? 'unset' : '70%'};
   }
+
+  @media (min-width: ${({ theme }) => theme.breakPoint.large}) {
+    div {
+      width: 70%;
+    }
+
+    div:first-child {
+      display:  ${({ responsive }) => responsive ? 'none' : 'flex'};
+    }
+    
+  } 
 `
 
 export const HistoricContent = styled.div`

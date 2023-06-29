@@ -1,6 +1,5 @@
 import styled  from 'styled-components'
-
-const heightMenu = 64
+import { heightMenu } from 'const'
 
 export const PagesLayout = styled.div`
   max-width: 100%;

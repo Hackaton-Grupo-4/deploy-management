@@ -1,1 +1,1 @@
-export const aguardeConsts = {}
+export * from './page'

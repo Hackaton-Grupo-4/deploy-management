@@ -45,6 +45,7 @@
     "axios": "^1.4.0",
     "react-icons": "^4.10.1",
     "socket.io-client": "^4.7.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "react-hook-form": "^7.45.1"
   }
 }

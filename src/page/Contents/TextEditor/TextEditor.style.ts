@@ -6,11 +6,11 @@ export const Title = styled.h3`
 `;
 
 export const Container = styled.div`
-  padding: 0 150px 0 60px;
+  padding-left: 60px;
   font-size: 14px;
 
   @media (max-width: 992px) {
-    padding: 0 50px 0 100px;
+    padding-left: 100px;
   }
 
   input,
@@ -33,10 +33,31 @@ export const Container = styled.div`
   label {
     font-size: 12px;
   }
+
+  .demo-wrapper {
+    border: 1px solid #e1e4e8;
+    padding: 2px;
+    border-radius: 2px;
+    background: #fff;
+  }
+  
+  .demo-editor {
+    min-height: 200px;
+    padding: 10px;
+  }
 `;
 
-export const Content = styled.div`
+export const Content = styled.form`
   width: 100%;
+  display: inline-block;
+  overflow: scroll;
+  height: calc(100vh - 170px);
+  padding-right: 120px;
+  box-sizing: border-box;
+
+  @media (max-width: 992px) {
+    padding-right: 30px;
+  }
 `;
 
 export const InputGroup = styled.div`

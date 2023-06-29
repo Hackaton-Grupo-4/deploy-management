@@ -1,7 +1,7 @@
 
 import { ThemeProvider } from 'styled-components'
 import {theme, GlobalStyle } from './styled'
-import { Pages } from './page'
+import { Pages } from 'page'
 
 export const App = () => 
   <ThemeProvider theme={theme}>

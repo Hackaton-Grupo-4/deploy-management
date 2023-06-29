@@ -1,5 +1,5 @@
 import { PagesLayout, PagesContent, PagesMenu } from './styled'
-import { PageHistoric, PageReport, PageTextEditor } from './Contents'
+/* import { PageHistoric, PageReport, PageTextEditor } from './Contents' */
 
 export const Pages = () => 
   <PagesLayout>

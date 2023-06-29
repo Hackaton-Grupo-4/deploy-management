@@ -26,7 +26,7 @@ export const ButtonLayout = styled.div<IButton>`
   width: 100%;
   max-width: 100%;
   max-height: 32px;
-  
+  white-space: nowrap;
 
   background-color: ${({ outline, color, theme }) => outline ? theme.colors.backgroundMain : colorButton(color)};  
   color: ${({ outline, color, theme }) => outline ? colorButton(color) : theme.colors.backgroundMain};

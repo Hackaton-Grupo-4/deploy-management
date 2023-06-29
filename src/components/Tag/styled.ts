@@ -8,4 +8,5 @@ export const TagLayout = styled.div`
   padding: ${({ theme }) => theme.spaceSize.xsmall}px;
   border-radius: 8px;
   font-weight: ${({ theme }) => theme.font.weight.bold};
+  font-size: 10px;
 `

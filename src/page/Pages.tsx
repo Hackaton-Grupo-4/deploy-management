@@ -1,11 +1,29 @@
 import { PagesLayout, PagesContent, PagesMenu } from './styled'
-/* import { PageHistoric, PageReport, PageTextEditor } from './Contents' */
+import { PageContext } from 'context'
+import { usePages } from 'hooks'
+import { PageHistoric, PageReport, PageTextEditor, Menu } from './Contents'
 
-export const Pages = () => 
-  <PagesLayout>
-    <PagesMenu></PagesMenu>
-    <PagesContent>
-      <div>dasdasdas</div>
-      <div>dasdasdas</div>
-    </PagesContent>
-  </PagesLayout>
+export const Pages = () => {
+  const hookProps = usePages()
+  const { chosenPage } = hookProps
+
+  const Content = {
+    Historic: <PageHistoric />,
+    Report: <PageReport />,
+    TextEditor: <PageTextEditor />
+  }
+
+  return (
+    <PageContext.Provider value={{ ...hookProps }}>
+      <PagesLayout>
+        <PagesMenu children={<Menu />} />
+        <PagesContent>
+          {
+            Content[chosenPage]
+          }
+        </PagesContent>
+      </PagesLayout>
+    </PageContext.Provider>
+  )
+}
+  

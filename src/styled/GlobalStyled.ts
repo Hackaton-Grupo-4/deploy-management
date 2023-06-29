@@ -14,6 +14,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-size: ${({ theme }) => theme.font.size.base}; 
     line-height: 1.5;
-    ${({ theme }) => theme.scroll}
+    overflow: hidden;
   }
 `

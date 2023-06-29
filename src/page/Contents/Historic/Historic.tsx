@@ -1,5 +1,5 @@
 import { useHistoric } from 'hooks'
-import { HistoricLayout, HistoricContent } from './styled'
+import { HistoricLayout, HistoricContent, HistoricHeader, HistoricList } from './styled'
 import { Filter } from './Filter'
 
 export const PageHistoric = () => {
@@ -7,9 +7,14 @@ export const PageHistoric = () => {
 
   return (
     <HistoricLayout>
-      <Filter {...props} />
+      <HistoricHeader>
+        Estatíticas
+      </HistoricHeader>
       <HistoricContent>
-        Histórico
+        <HistoricList>
+          Listas
+        </HistoricList>
+        <Filter {...props} />
       </HistoricContent>
     </HistoricLayout>
   )

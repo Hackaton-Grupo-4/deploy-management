@@ -16,7 +16,7 @@ export const Pages = () => {
   return (
     <PageContext.Provider value={{ ...hookProps }}>
       <PagesLayout>
-        <PagesMenu children={<Menu />} />
+        <PagesMenu children={<Menu />}  {...{...hookProps}} />
         <PagesContent>
           {
             Content[chosenPage]

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import { heightMenu } from 'const'
-import { IMenuStyled } from 'interfaces'
+import { heightMenu } from '../../../const'
+import { IMenuStyled } from '../../../interfaces'
 
 export const MenuLayout = styled.div<IMenuStyled>`
   display: flex;

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import { IButton, TColorButton } from 'interfaces'
-import { theme } from 'styled'
+import { IButton, TColorButton } from '../../interfaces'
+import { theme } from '../../styled'
 
 const colorOptions = {
   PRIMARY: `${theme.colors.backgroundMenu}${theme.opacy.percent95}`,

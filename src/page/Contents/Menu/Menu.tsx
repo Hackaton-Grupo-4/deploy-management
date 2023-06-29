@@ -1,6 +1,6 @@
 import { MenuContent, MenuLayout, MenuOption, MenuKebab, MenuKebabClose } from './styled'
-import { usePageContext } from 'context'
-import { ChosePageEnum } from 'interfaces'
+import { usePageContext } from '../../../context'
+import { ChosePageEnum } from '../../../interfaces'
 import { AiOutlinePlusCircle, AiOutlineUndo, AiOutlineMenu, AiOutlineArrowUp } from "react-icons/ai"
 
 export const Menu = () => {

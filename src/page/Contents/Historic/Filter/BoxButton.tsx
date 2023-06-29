@@ -1,7 +1,6 @@
 import { HistoricFilterBoxBtn } from '../styled'
-import { IUseHistoricResponse } from 'interfaces'
-import { Button } from 'components'
-import { pageButtonsLabel } from 'const'
+import { IUseHistoricResponse } from '../../../../interfaces'
+import { Button } from '../../../../components'
 import { AiOutlineArrowUp } from "react-icons/ai"
 
 

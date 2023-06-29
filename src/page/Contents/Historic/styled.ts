@@ -36,6 +36,7 @@ export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
 `
 export const HistoricFilterBox = styled.div`
   height: calc(100% - 60px);
+  text-align: center;
 `
 
 
@@ -72,6 +73,7 @@ export const HistoricHeader = styled.div`
   width: 100%;
   height: 128px;
   max-height: 128px;
+  text-align: center;
 `
 
 export const HistoricList = styled.div`

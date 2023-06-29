@@ -12,6 +12,7 @@ interface colors {
   red: string
   blue: string
   blue1: string
+  blue2: string
   green: string
   grey1: string
   grey2: string
@@ -105,6 +106,7 @@ export type nameColors =
     | 'red'
     | 'blue'
     | 'blue1'
+    | 'blue2'
     | 'green'
     | 'grey1'
     | 'grey2'

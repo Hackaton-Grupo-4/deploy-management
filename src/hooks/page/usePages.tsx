@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { IPageContext } from 'interfaces'
+import { IPageContext, TChosenPage, ChosePageEnum } from 'interfaces'
 
 export const usePages = (): IPageContext => {
-  const [chosenPage, setChosenPage] = useState<'Historic' | 'Report' | 'TextEditor'>('Historic')
+  const [chosenPage, setChosenPage] = useState<TChosenPage>(ChosePageEnum.HISTORIC)
   
   return {
     chosenPage,

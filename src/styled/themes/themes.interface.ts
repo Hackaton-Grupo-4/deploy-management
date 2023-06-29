@@ -8,8 +8,10 @@ interface colors {
   black: string
   black1: string
   white: string
+  white1: string
   red: string
   blue: string
+  blue1: string
   green: string
   grey1: string
   grey2: string
@@ -99,8 +101,10 @@ export type nameColors =
     | 'black'
     | 'black1'
     | 'white'
+    | 'white1'
     | 'red'
     | 'blue'
+    | 'blue1'
     | 'green'
     | 'grey1'
     | 'grey2'

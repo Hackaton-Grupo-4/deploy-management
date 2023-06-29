@@ -26,7 +26,6 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noUnusedParameters": true,
     "paths": {
       "services/*": ["services/index.ts"],
       "hooks/*": ["hooks/index.ts"],

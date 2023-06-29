@@ -11,6 +11,7 @@ export const theme: DefaultTheme = {
     black1: '#2D3139',
 
     white: '#FFFFFF',
+    white1: '#F3F5F9',
     
     grey1: '#447ECC29',
     grey2: '#6B7786',
@@ -18,6 +19,7 @@ export const theme: DefaultTheme = {
     red: '#FF2424',
 
     blue: '#2699FB',
+    blue1: '#9BA8BA',
 
     green: '#4CAF50',
   },

@@ -14,7 +14,7 @@ export const PagesMenu = styled.div<IMenuStyled>`
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.backgroundMenu};
 
-  @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
+  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
     height: ${({ openMenuResponsive }) => openMenuResponsive ? '100vh' : `${heightMenu}px`};
     background-color: ${({ openMenuResponsive, theme }) => openMenuResponsive ? theme.colors.backgroundMenu : 'transparent'};
     position: absolute;
@@ -28,7 +28,7 @@ export const PagesContent = styled.div`
   max-height: 100vh;
   overflow: hidden;
 
-  @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
+  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
     width: 100%;
   } 
 `

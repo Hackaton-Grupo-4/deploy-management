@@ -6,7 +6,7 @@ export const Title = styled.h3`
 `;
 
 export const Container = styled.div`
-  padding-left: 60px;
+  padding-left: 150px;
   font-size: 14px;
 
   @media (max-width: 992px) {
@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 
   input,
-  textarea {
+  textarea, select {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;

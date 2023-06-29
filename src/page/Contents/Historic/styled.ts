@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import { heightMenu } from 'const'
+import { heightMenu, widthMenu } from 'const'
 
 export const HistoricLayout = styled.div`
   display: flex;
+  flex-direction: column;
   max-width: 100%;
   height: 100%;
-
-  position: relative;
 `
 
 export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
@@ -42,7 +41,7 @@ export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
 
   @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
     display: ${({ openResponsive }) => openResponsive ? 'unset' : 'none'};
-    height: calc(100vh - ${heightMenu}px);
+    height: 100%;
     background-color: ${({ theme }) => theme.colors.backgroundMain};
     position: absolute;
     right: 0;
@@ -76,6 +75,19 @@ export const HistoricFilterBoxBtn = styled.div<{ responsive: boolean }>`
 `
 
 export const HistoricContent = styled.div`
+  display: flex;
   width: 100%;
-  padding: ${({ theme }) => theme.spaceSize.large}px;
+  height: calc(100vh - 128px);
+
+  position: relative;
+`
+
+export const HistoricHeader = styled.div`
+  width: 100%;
+  height: 128px;
+  max-height: 128px;
+`
+
+export const HistoricList = styled.div`
+  width: calc(100% - 280px);
 `

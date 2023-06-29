@@ -26,8 +26,9 @@ export const PagesContent = styled.div`
   width: calc(100% - ${widthMenu}px);
   height: 100vh;
   max-height: 100vh;
+  overflow: hidden;
 
-  overflow: auto;
-
-  ${({ theme }) => theme.scroll}
+  @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
+    width: 100%;
+  } 
 `

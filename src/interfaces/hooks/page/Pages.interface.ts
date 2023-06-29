@@ -1,0 +1,1 @@
+export type TChosenPage = 'Historic' | 'Report' | 'TextEditor'

@@ -23,8 +23,10 @@ export const ButtonLayout = styled.div<IButton>`
   align-items: center;
   column-gap: ${({ theme }) => theme.spaceSize.small}px;
 
+  min-width: 60px;
+  width: 100%;
   max-width: 100%;
-  max-height: 38px;
+  max-height: 32px;
   
   background-color: ${({ outline, color, theme }) => outline ? theme.colors.backgroundMain : colorButton(color)};  
   color: ${({ outline, color, theme }) => outline ? colorButton(color) : theme.colors.backgroundMain};
@@ -32,7 +34,7 @@ export const ButtonLayout = styled.div<IButton>`
   border: 1px solid ${({ color }) => colorButton(color)};
   border-radius: 4px;
 
-  padding: ${({ theme }) => `${theme.spaceSize.small}px ${theme.spaceSize.medium}px`};
+  padding: ${({ theme }) => `${theme.spaceSize.xsmall}px ${theme.spaceSize.medium}px`};
 
   cursor: pointer;
   transition-duration: ${({theme}) => theme.animation.time.medium};

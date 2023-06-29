@@ -34,6 +34,8 @@ export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
 `
 
 export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
+  display: flex;
+  flex-direction: column;
   min-width: 280px;
   max-height: 100%;
   border-right: 1px solid ${({ theme }) => theme.colors.borderMain};
@@ -45,6 +47,20 @@ export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
     position: absolute;
     z-index: 10;
   } 
+`
+export const HistoricFilterBox = styled.div`
+  height: calc(100% - 60px);
+`
+
+
+export const HistoricFilterBoxBtn = styled.div<{ responsive: boolean }>`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;  
+
+  div {
+    width: ${({ responsive }) => responsive ? 'unset' : '70%'};
+  }
 `
 
 export const HistoricContent = styled.div`

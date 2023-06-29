@@ -2,7 +2,8 @@ import { useState } from "react"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { Editor } from 'react-draft-wysiwyg'
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
-import { EditorState, convertToRaw } from 'draft-js'
+import { EditorState, convertToRaw, convertFromRaw, ContentState } from 'draft-js'
+import { stateToHTML } from 'draft-js-export-html'
 import {
   Button,
   Container,
@@ -34,7 +35,9 @@ export const PageTextEditor = () => {
     console.log(data)
     const contentState = editorState.getCurrentContent()
     const rawContent = convertToRaw(contentState)
-    console.log(rawContent)
+    const newContentState = convertFromRaw(rawContent)
+    const htmlContent = stateToHTML(newContentState)
+    console.log(htmlContent)
   }
 
   return (

@@ -100,6 +100,10 @@ export const Button = styled.button`
   height: 30px;
   border-radius: 20px;
   position: absolute;
-  right: 30px;
+  right: 100px;
   bottom: 20px;
+
+  @media (max-width: 992px) {
+    right: 30px;
+  }
 `

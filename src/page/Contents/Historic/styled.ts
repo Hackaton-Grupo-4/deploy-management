@@ -13,7 +13,7 @@ export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
   top: 2px;
   right: 2px;
 
-  @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
+  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
     display: ${({ showBtnFilter }) => showBtnFilter ? 'flex' : 'none'};
   }
 `
@@ -25,7 +25,7 @@ export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
   max-height: 100%;
   border-left: 1px solid ${({ theme }) => theme.colors.borderMain};
 
-  @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
+  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
     display: ${({ openResponsive }) => openResponsive ? 'unset' : 'none'};
     height: 100%;
     background-color: ${({ theme }) => theme.colors.backgroundMain};
@@ -48,7 +48,7 @@ export const HistoricFilterBoxBtn = styled.div<{ responsive: boolean }>`
     width: ${({ responsive }) => responsive ? 'unset' : '70%'};
   }
 
-  @media (min-width: ${({ theme }) => theme.breakPoint.large}) {
+  @media (min-width: ${({ theme }) => theme.breakPoint.xlarge}) {
     div {
       width: 70%;
     }
@@ -76,4 +76,8 @@ export const HistoricHeader = styled.div`
 
 export const HistoricList = styled.div`
   width: calc(100% - 430px);
+
+  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
+    width: 100%;
+  } 
 `

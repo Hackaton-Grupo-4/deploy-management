@@ -20,7 +20,7 @@ export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
   color: ${({ theme }) => theme.colors.blue2};
   position: absolute;
   top: 2px;
-  left: 2px;
+  right: 2px;
   cursor: pointer;
   
   &:hover {
@@ -38,13 +38,14 @@ export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
   flex-direction: column;
   min-width: 280px;
   max-height: 100%;
-  border-right: 1px solid ${({ theme }) => theme.colors.borderMain};
+  border-left: 1px solid ${({ theme }) => theme.colors.borderMain};
 
   @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
     display: ${({ openResponsive }) => openResponsive ? 'unset' : 'none'};
     height: calc(100vh - ${heightMenu}px);
     background-color: ${({ theme }) => theme.colors.backgroundMain};
     position: absolute;
+    right: 0;
     z-index: 10;
   } 
 `

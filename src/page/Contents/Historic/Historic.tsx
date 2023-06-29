@@ -7,10 +7,10 @@ export const PageHistoric = () => {
 
   return (
     <HistoricLayout>
-      <Filter {...props} />
       <HistoricContent>
         Histórico
       </HistoricContent>
+      <Filter {...props} />
     </HistoricLayout>
   )
 } 

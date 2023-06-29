@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react'
-import { TChosenPage } from 'interfaces'
+import { TChosenPage } from '../../interfaces'
 
 export interface IPageContext {
   chosenPage: TChosenPage

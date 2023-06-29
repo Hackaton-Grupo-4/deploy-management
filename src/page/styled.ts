@@ -1,6 +1,6 @@
 import styled  from 'styled-components'
-import { widthMenu, heightMenu } from 'const'
-import { IMenuStyled } from 'interfaces'
+import { widthMenu, heightMenu } from '../const'
+import { IMenuStyled } from '../interfaces'
 
 export const PagesLayout = styled.div`
   display: flex;

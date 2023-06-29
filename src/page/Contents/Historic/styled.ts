@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { heightMenu, widthMenu } from 'const'
 
 export const HistoricLayout = styled.div`
   display: flex;
@@ -10,22 +9,9 @@ export const HistoricLayout = styled.div`
 
 export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
   display: none;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 80px;
-  height: 32px;
-  border: 1px solid ${({ theme }) => theme.colors.blue2};
-  border-radius: 4px;
-  color: ${({ theme }) => theme.colors.blue2};
   position: absolute;
   top: 2px;
   right: 2px;
-  cursor: pointer;
-  
-  &:hover {
-    color: ${({ theme }) => theme.colors.backgroundMain};
-    background-color: ${({ theme }) => theme.colors.blue2};
-  }
 
   @media (max-width: ${({ theme }) => theme.breakPoint.large}) {
     display: ${({ showBtnFilter }) => showBtnFilter ? 'flex' : 'none'};
@@ -35,7 +21,7 @@ export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
 export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
   display: flex;
   flex-direction: column;
-  min-width: 280px;
+  min-width: 430px;
   max-height: 100%;
   border-left: 1px solid ${({ theme }) => theme.colors.borderMain};
 
@@ -89,5 +75,5 @@ export const HistoricHeader = styled.div`
 `
 
 export const HistoricList = styled.div`
-  width: calc(100% - 280px);
+  width: calc(100% - 430px);
 `

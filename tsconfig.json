@@ -21,19 +21,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
-    "paths": {
-      "services/*": ["services/index.ts"],
-      "hooks/*": ["hooks/index.ts"],
-      "styled/*": ["styled/index.ts"],
-      "interfaces/*": ["interfaces/index.ts"],
-      "page/*": ["page/index.tsx"],
-      "context/*": ["context/index.ts"],
-      "utils/*": ["utils/index.ts"],
-      "const/*": ["const/index.ts"],
-      "components/*": ["components/index.ts"],
-      "assets/*": ["assets/index.ts"]
-    }
+    "strictNullChecks": true
   },
   "include": ["src"]
 }

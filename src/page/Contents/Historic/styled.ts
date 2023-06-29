@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { heightMenu, widthMenu } from 'const'
 
 export const HistoricLayout = styled.div`
   display: flex;
@@ -22,7 +21,7 @@ export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`
 export const HistoricFilter = styled.div<{ openResponsive: boolean }>`
   display: flex;
   flex-direction: column;
-  min-width: 280px;
+  min-width: 430px;
   max-height: 100%;
   border-left: 1px solid ${({ theme }) => theme.colors.borderMain};
 
@@ -76,5 +75,5 @@ export const HistoricHeader = styled.div`
 `
 
 export const HistoricList = styled.div`
-  width: calc(100% - 280px);
+  width: calc(100% - 430px);
 `

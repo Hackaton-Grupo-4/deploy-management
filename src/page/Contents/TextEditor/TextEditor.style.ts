@@ -54,6 +54,7 @@ export const Content = styled.form`
   height: calc(100vh - 170px);
   padding-right: 120px;
   box-sizing: border-box;
+  position: realtive;
 
   @media (max-width: 992px) {
     padding-right: 30px;
@@ -86,3 +87,19 @@ export const TextareaGroup = styled.div`
 export const TextareaContainer = styled.div`
   margin-bottom: 30px;
 `;
+
+
+export const Button = styled.button`
+  appearance: none;
+  border: none;
+  background: rgba(18, 45, 82, 0.95);
+  color: rgb(243, 245, 249);
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+`

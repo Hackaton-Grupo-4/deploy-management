@@ -4,6 +4,7 @@ import { Editor } from 'react-draft-wysiwyg'
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css"
 import { EditorState, convertToRaw } from 'draft-js'
 import {
+  Button,
   Container,
   Content,
   InputContainer,
@@ -93,8 +94,7 @@ export const PageTextEditor = () => {
             />
           </TextareaContainer>
         </TextareaGroup>
-
-        <button type="submit">Salvar</button>
+        <Button type="submit">Salvar</Button>
       </Content>
     </Container>
   )

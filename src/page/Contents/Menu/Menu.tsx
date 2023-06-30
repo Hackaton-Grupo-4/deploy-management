@@ -8,9 +8,9 @@ export const Menu = () => {
 
   return (
     <MenuLayout {...{openMenuResponsive}}>
-      <MenuKebab {...{openMenuResponsive}} onClick={() => setOpenMenuResponsive(true)}>
+      {/*<MenuKebab {...{openMenuResponsive}} onClick={() => setOpenMenuResponsive(true)}>
         <AiOutlineMenu />
-      </MenuKebab>
+      </MenuKebab>*/}
       <MenuContent {...{openMenuResponsive}}>
         <MenuOption active={chosenPage === ChosePageEnum.HISTORIC} onClick={() => setChosenPage(ChosePageEnum.HISTORIC)}>
           <AiOutlineUndo />

@@ -5,10 +5,6 @@ export const HistoricLayout = styled.div`
   flex-direction: column;
   max-width: 100%;
   height: 100%;
-
-  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
-    padding-left: 65px;
-  }
 `
 
 export const HistoricBtnFilterResponse = styled.div<{ showBtnFilter: boolean }>`

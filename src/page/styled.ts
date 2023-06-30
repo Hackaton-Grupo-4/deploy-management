@@ -12,14 +12,16 @@ export const PagesLayout = styled.div`
 export const PagesMenu = styled.div<IMenuStyled>`
   width: ${widthMenu}px;
   height: 100vh;
+  padding-top: 20px;
+  padding-left: 10px;
   background-color: ${({ theme }) => theme.colors.backgroundMenu};
 
-  @media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
+  /*@media (max-width: ${({ theme }) => theme.breakPoint.xlarge}) {
     height: ${({ openMenuResponsive }) => openMenuResponsive ? '100vh' : `${heightMenu}px`};
     background-color: ${({ openMenuResponsive, theme }) => openMenuResponsive ? theme.colors.backgroundMenu : 'transparent'};
     position: absolute;
     z-index: 10;
-  } 
+  }*/
 `
 
 export const PagesContent = styled.div`

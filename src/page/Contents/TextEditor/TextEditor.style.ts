@@ -6,11 +6,11 @@ export const Title = styled.h3`
 `;
 
 export const Container = styled.div`
-  padding-left: 150px;
+  padding-left: 60px;
   font-size: 14px;
 
   @media (max-width: 992px) {
-    padding-left: 100px;
+    padding-left: 30px;
   }
 
   input,
